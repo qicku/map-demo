@@ -3,3 +3,4 @@ dist
 !dist/**/*.html
 node_modules
 public/**/*.min.js
+public/**/*.json

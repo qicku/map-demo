@@ -7,8 +7,17 @@
       content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1"
     />
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script src="https://unpkg.com/topojson-client@3"></script> -->
   </head>
   <body>
     <div id="root"></div>
+    <div id="toast" class="toast hide">
+      <div class="inner-content">
+        <p id="selectRegon"></p>
+        <span>点击进入游戏(未实现跳转)</span>
+        <button id="hideButton">关闭</button>
+      </div>
+    </div>
   </body>
 </html>

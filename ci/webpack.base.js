@@ -11,7 +11,7 @@ const chalk = require('chalk')
 
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
-const { R, src, dist, htmlTemplete, logo } = require('./paths')
+const { R, src, dist, htmlTemplete, logo, pubdir } = require('./paths')
 
 const devMode = process.env.NODE_ENV === 'development'
 
@@ -30,6 +30,9 @@ const PrevousPlugins = [
     Buffer: ['buffer', 'Buffer'],
   }),
   new NodePolyfillPlugin(),
+  new CopyWebpackPlugin({
+    patterns: [{ from: R(pubdir, 'data'), to: R(dist, 'data'), force: true }],
+  }),
 ]
 
 const SuffixPlugins = [
