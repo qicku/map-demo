@@ -12,4 +12,5 @@ module.exports = {
   src: path.resolve(__dirname, '../src'),
   pubdir: path.resolve(__dirname, '../public'),
   dist: path.resolve(__dirname, '../dist'),
+  docs: path.resolve(__dirname, '../docs'),
 }

@@ -1,5 +1,25 @@
 @import './scss/all';
 
+.github-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  z-index: 100001;
+  .goto-github {
+    padding: 6px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    line-height: 36px;
+    font-size: 22px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+  }
+}
+
 #toast {
   position: absolute;
   width: 100vw;

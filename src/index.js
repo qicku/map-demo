@@ -27,6 +27,7 @@ async function startApp() {
 
   await draw(g)
   bindHideButton()
+  bindGithub()
 }
 
 function bindHideButton() {
@@ -35,4 +36,16 @@ function bindHideButton() {
     document.querySelector('#toast').classList.add('hide')
     document.querySelector('selectRegon').innerHTML = ''
   })
+}
+
+function bindGithub() {
+  document
+    .querySelector('.goto-github')
+    .addEventListener('click', function (e) {
+      e.preventDefault()
+      window.open(
+        'https://github.com/qicku/map-demo/tree/dev-main',
+        'game-demo-code'
+      )
+    })
 }
