@@ -47,7 +47,7 @@ const SuffixPlugins = [
 
 const plugins = [].concat(PrevousPlugins).concat(SuffixPlugins)
 
-let publicPath = process.env.NODE_ENV === 'production' ? '/' : '/map-demo/docs'
+let publicPath = process.env.NODE_ENV === 'production' ? '/' : '/'
 
 const baseConfig = {
   entry: {
